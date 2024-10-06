@@ -47,4 +47,4 @@ rasterResult<- fasterize::fasterize(vector_file, raster_base, field = field_id) 
 plot(rasterResult)
 
 ## Export results ####
-terra::writeRaster(rasterResult, paste0(path_export_rasterResult, ".tif") )
+terra::writeRaster(rasterResult, overwrite=T, paste0(path_export_rasterResult, ".tif") )
